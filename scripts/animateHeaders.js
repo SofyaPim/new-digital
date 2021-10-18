@@ -11,7 +11,7 @@ function animateHeaders() {
                        if(el.childNodes[1]){
                            setTimeout(() => {
                                 el.childNodes[1].style.opacity = 1;
-                           }, 10)
+                           }, 1000)
                           
                             console.log('done');
                        }
