@@ -742,13 +742,14 @@ p {
   padding-top: 10%;
   padding-right: 6.25rem;
   /* background: linear-gradient(240.59deg, rgba(105, 176, 249, 0.8) 18.61%, rgba(88, 76, 239, 0.8) 63.63%), #047385; */
-  background-image:url('../images/main.jpg');
+  background-image:url('../images/city-tiny.png');
   background-size:cover;
   background-position: center center;
   color: #FfFfFE;
   position: relative;
   display: grid;
   grid-template-columns: 50% 50%;
+  /* padding-bottom: 10%; */
 }
 .wrapper .about h1 {
   /* margin-bottom: calc(1rem + 1vh); */
@@ -868,6 +869,21 @@ p {
 }
 .wrapper .propose__list ul li img {
   width: 1rem;
+}
+.wrapper .propose .download-btn{
+  width: initial;
+    border: 1px solid #047385;
+    background-color: #FfFfFE;
+    cursor: pointer;
+    padding: 1.5% 3%;
+   margin-left: 2.5rem;
+   margin-top: 1rem;
+    transition-property: background-color, color;
+    transition-duration: 0.3s, 0.3s;
+    color: #047385;
+    font-size: calc(.8rem + .5vw);
+    border-radius: 10px;
+
 }
 .wrapper .hints {
   position: relative;

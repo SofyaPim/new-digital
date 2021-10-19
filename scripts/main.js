@@ -15,6 +15,7 @@ import throwItems from "./throwItems.js";
 import animateHeaders from "./animateHeaders.js";
 import lazyLoadImages from "./lazyLoadImages.js";
 import moveItemUp from "./parallax.js";
+import download from "./download.js";
 
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -35,6 +36,7 @@ document.addEventListener("DOMContentLoaded", () => {
   timer();
   lazyLoadImages(".wrapper");
   moveItemUp();
+  download();
 
   let discountTime = -30000; //86 400 000 //24hours
   function clearLocalStorage() {
