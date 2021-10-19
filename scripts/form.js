@@ -9,6 +9,11 @@ function forms() {
         success: 'Спасибо, скоро с Вами свяжемся',
         failure: 'Что-то пошло не так'
     }
+    // function showSpinner (){
+    //     let spinner = document.createElement('div');
+    //     spinner.innerHTML = `<img src="./images/Spinner.gif">`;
+
+    // }
 
     function closeForm(form, overlay) {
 
@@ -135,10 +140,14 @@ function forms() {
             let submitDay = day.toString().slice(3, 24);
 
             let statusMessage = document.createElement('div');
+
             statusMessage.classList.add('status-message');
 
             let bodyMessage = document.createElement('div');
             bodyMessage.classList.add('afterSubmitMsg');
+            
+            let spinner = document.createElement('div');
+            spinner.innerHTML = `<img src="./images/Spinner.gif">`;
 
             item.appendChild(statusMessage);
            
@@ -167,15 +176,18 @@ function forms() {
                 formData.append('Скидка', 'без скидки');
             }
 
-            statusMessage.textContent = message.loading;
+           statusMessage.textContent = message.loading;
+         //  statusMessage.innerHTML = `<img src="./images/Spinner.gif">`;
+statusMessage.append(spinner);
            
-            //  !!!==============================
+            //  !!!==============================./server.php
             postData('./telegram.php', formData) // c ./server.php  проверено // //   - проверено   ./sendmail.php
                 .then(res => {
                     console.log(res);
 
                     statusMessage.textContent = message.success;
                     bodyMessage.textContent = message.success;
+                    spinner.remove();
 
 
                 })

@@ -751,7 +751,7 @@ p {
   grid-template-columns: 50% 50%;
 }
 .wrapper .about h1 {
-  margin-bottom: calc(1rem + 1vh);
+  /* margin-bottom: calc(1rem + 1vh); */
   z-index: 5;
 }
 .wrapper .about .search {
@@ -1823,7 +1823,7 @@ p {
   }
   .wrapper h1 {
     font-size: calc(2.5rem + 1vw);
-    line-height: 3rem;
+    line-height: 2rem;
   }
   .wrapper h2 {
     font-size: calc(1.5rem + 1vw);
