@@ -233,8 +233,8 @@
             </div>
              <div class="hints-image">
                 <img class="iMac " src="images/screen.svg" alt="iMac with you hints">
-                <img class="iPad " src="images/iPad-Mockup.svg" alt="iPad with you hints">
-                <img class="iPhone " src="images/mobile-mockup-blur.png" alt="iPhone with you hints">
+                <!-- <img class="iPad " src="images/iPad-Mockup.svg" alt="iPad with you hints">
+                <img class="iPhone " src="images/mobile-mockup-blur.png" alt="iPhone with you hints"> -->
 
 
             </div> 
@@ -1033,17 +1033,24 @@
         </section>
         <footer class="footer">
             <a href="#about" class="logo"><img src="images/logo-white.svg" alt="roboClick"></a>
-            <div class="footer-nav">
-                <nav>
-                    <a href="#about"> главная</a>
+            
+                <nav class="footer-nav">
+                    <div class="column">
+                          <a href="#about"> главная</a>
                     <a href="#propose"> преимущества </a>
                     <a href="#hints"> подсказки </a>
                     <a href="#work-with-us"> этапы сотрудничества </a>
-                    <a href="#prices"> тарифы</a>
+                    </div>
+                  <div class="column">
+                       <a href="#prices"> тарифы</a>
                     <a href="#faq"> вопросы и ответы</a>
                     <a href="#contacts"> контакты</a>
+                  </div>
+                   
+                   
                 </nav>
-            </div>
+            
+            
             <div class="social-icons">
                 <a href="#"> <img src="images/telegram-icon.svg" alt="telegram"> </a>
                 <a href="#"> <img src="images/whatsapp-icon.svg" alt="whatsapp"> </a>
@@ -1057,7 +1064,6 @@
                 <h3 class="popup-title">Оформление заказа</h3>
                 <p class="_discount-message commit"></p>
                 <input type="hidden" name="form_subject" value="поисковые подсказки">
-
                 <input type="text" name="имя" id="formName" placeholder="Ваше имя" class="_req">
                 <span class="message">Заполните корректно поле </span>
                 <input type="email" name="почта" placeholder="Ваш Email" id="formEmail" class="_req _email">
@@ -1070,7 +1076,6 @@
                         <span class="message aftercheckbox">Подтвердите согласие на обработку данных</span>
                         <input type="checkbox" checked name="agreement" id="popupAgreement" class="check__input">
                         <span class="check__box" tabindex="0"></span>
-
                         <span>Я даю свое согласие на обработку персональных данных в соответствии с <a
                                 href="#">Условиями</a></span>
                     </label>
