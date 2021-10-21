@@ -247,7 +247,7 @@ p {
 }
 
 .collapse {
-  bottom: -120px;
+  bottom: -125px;
 }
 
 .aftercheckbox {
@@ -2875,7 +2875,7 @@ p {
 @media all and (max-width: 720px) {
   .wrapper .footer{
     grid-template-columns: 1fr;
-    grid-template-rows: 10% 1fr 10%;
+    grid-template-rows: 10% 1fr 20%;
   }
   .wrapper .footer .logo{
     margin: 0 auto;
@@ -2909,9 +2909,6 @@ p {
 }
 
 @media all and (max-width: 640px) {
-  .wrapper .collapse {
-    bottom: -100px;
-  }
 
   .wrapper .overlay .popup {
     width: 90%;
