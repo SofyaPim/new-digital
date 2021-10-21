@@ -129,7 +129,7 @@ function forms() {
             }
             //create field time to formData
             if (!localStorage.getItem('day')) {
-                let discountTime = 60000; //1min //(3600000 * 24)//24hours//3600000 //hour
+                let discountTime = 86400000; //1min 60000//(3600000 * 24)//24hours//3600000 //hour
                 let currentDay = Date.now() + discountTime;
                 localStorage.setItem('day', currentDay.toString());
 

@@ -38,7 +38,7 @@ document.addEventListener("DOMContentLoaded", () => {
   moveItemUp();
   download();
 
-  let discountTime = -30000; //86 400 000 //24hours
+  let discountTime = -86400000; // //24hours30000
   function clearLocalStorage() {
     if ((+localStorage.getItem('day') - Date.now()) < discountTime) {
       localStorage.clear();
@@ -47,6 +47,6 @@ document.addEventListener("DOMContentLoaded", () => {
   }
   clearLocalStorage();
 
-
+  // localStorage.clear();
 
 });
