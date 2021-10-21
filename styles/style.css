@@ -1740,9 +1740,10 @@ p {
   overflow: hidden;
   position: absolute;
 
-  max-width: 1000px;
+ 
   margin-top: 2rem;
   width: 100%;
+   max-width: 800px;
 }
 
 .wrapper .faq .accordion__items {
