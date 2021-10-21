@@ -8,14 +8,14 @@ function animateHeaders() {
                     headers.forEach(el => {
                         el.classList.remove('translate');
                         el.classList.remove('opacity');
-                       if(el.childNodes[1]){
-                           setTimeout(() => {
+                        if (el.childNodes[1]) {
+                            setTimeout(() => {
                                 el.childNodes[1].style.opacity = 1;
-                           }, 1000)
-                          
-                            console.log('done');
-                       }
-                      
+                            }, 1000)
+
+
+                        }
+
                     })
                 }
             }

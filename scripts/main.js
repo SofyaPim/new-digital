@@ -42,11 +42,11 @@ document.addEventListener("DOMContentLoaded", () => {
   function clearLocalStorage() {
     if ((+localStorage.getItem('day') - Date.now()) < discountTime) {
       localStorage.clear();
-     
+
     }
   }
   clearLocalStorage();
-  // localStorage.clear();//test
- console.log(+localStorage.getItem('day') - Date.now());
+
+
 
 });

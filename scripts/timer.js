@@ -33,7 +33,7 @@
          runTimer();
          timerId = setInterval(runTimer, 1000);
          setRedPrices();
-         console.log(timerId);
+        
          timer.classList.remove('visually-hidden');
 
 
@@ -60,7 +60,7 @@
          minutesText.textContent = declOfNum(minutes, ['минута', 'минуты', 'минут']);
          secondsText.textContent = declOfNum(seconds, ['секунда', 'секунды', 'секунд']);
 
-         console.log(timerId);
+       
 
          left = +localStorage.getItem('day') - Date.now();
          if (left < 0) {

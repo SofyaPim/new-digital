@@ -194,7 +194,7 @@ p {
   position: fixed;
   left: 0;
   right: 0;
-  background: linear-gradient(240.59deg, rgba(105, 176, 249, 0.8) 18.61%, rgba(88, 76, 239, 0.8) 63.63%), #047385;
+  background: linear-gradient(270deg, #047385 -16.43%, rgba(122, 216, 231, 0) 46.28%), #50D3E8;
   z-index: 109;
   align-items: center;
   display: flex;
@@ -261,13 +261,13 @@ p {
   height: 30%;
   right: 0;
   top: 0;
-  background-color: #5233ede5;
+  background-color: #047485c9;
   display: flex;
   align-items: center;
   padding: 1rem;
   z-index: 99;
   justify-content: center;
-  color: #2cd4d9;
+  color: #e3f4f5;
   font-family: "Raleway", sans-serif;
 }
 
@@ -2934,7 +2934,7 @@ p {
     top: -4rem;
     border: none;
     color: #ffffff;
-    background-color: #6597f7;
+    background-color: #047385;
     border-radius: 0.5rem;
   }
 
@@ -3221,6 +3221,9 @@ p {
    background-position: bottom center;
   
   }
+  .wrapper .about__main {
+    padding-left: 0rem;
+}
 
   .wrapper .about .phone-header {
     flex-direction: column;

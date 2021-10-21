@@ -36,27 +36,27 @@ function showStatistic() {
 
 
     let observer = new IntersectionObserver(entries => {
-        entries.forEach( entry => {
-            if(entry.isIntersecting){
-                console.log('let observ');
-                if(entry.target.querySelector('[data-static]')){
-                    
- runNum(1000, '#clients', 70);
-            runNum(80, '#traffic', 12);
-            runNum(2, '#conversion', 20);
-            runNum = function () {}
-            lessNum(500, '#minPrice', 45);
-            lessNum = function () {}
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+               
+                if (entry.target.querySelector('[data-static]')) {
+
+                    runNum(1000, '#clients', 70);
+                    runNum(80, '#traffic', 12);
+                    runNum(2, '#conversion', 20);
+                    runNum = function () {}
+                    lessNum(500, '#minPrice', 45);
+                    lessNum = function () {}
 
                 }
             }
         })
 
-       
-         
-            
-           
-        
+
+
+
+
+
 
 
     }, {
@@ -64,10 +64,10 @@ function showStatistic() {
     })
 
 
-   document.querySelectorAll('section').forEach(item => {
+    document.querySelectorAll('section').forEach(item => {
         observer.observe(item);
-   })
-   
+    })
+
 
 
 

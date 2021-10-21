@@ -1,14 +1,11 @@
 function moveItemUp() {
-  
+
     let observer = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
- 
-  
-
 
             if (entry.isIntersecting) {
                 if (entry.target.querySelectorAll('.moveUp')) {
- let moveItems = entry.target.querySelectorAll('.moveUp');
+                    let moveItems = entry.target.querySelectorAll('.moveUp');
                     moveItems.forEach(el => {
                         setTimeout(() => {
                             el.classList.remove('paddingTop');

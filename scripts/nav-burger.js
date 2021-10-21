@@ -1,4 +1,3 @@
-//function showNav(e,t){const s=document.querySelector(e),r=document.querySelector("header"),o=document.querySelector(t);let a=s.querySelector(".line1"),l=s.querySelector(".line2"),n=s.querySelector(".line3");document.addEventListener("click",e=>{e.target===s||e.target===r?(l.classList.toggle("displayNone"),a.classList.toggle("transform45deg"),n.classList.toggle("transformMin45deg"),o.classList.toggle("transformTransX"),document.body.style.overflow=""):e.target!=o&&e.target!=r&&o.classList.contains("transformTransX")&&(o.classList.remove("transformTransX"),l.classList.remove("displayNone"),a.classList.remove("transform45deg"),n.classList.remove("transformMin45deg"),document.body.style.overflow="")})}export default showNav;
 function showNav(burger, nav) {
     const btn = document.querySelector(burger),
         header = document.querySelector('header'),

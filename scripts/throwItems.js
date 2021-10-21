@@ -18,8 +18,7 @@ function throwItems(section) {
     yard.style.minHeight = '600px';
 
     window.addEventListener('scroll', () => {
-        // console.log(yard.getBoundingClientRect().top);
-        //  console.log(yard.getBoundingClientRect().bottom);
+
         if (yard.getBoundingClientRect().top < 300) {
             showItems(manager, 0);
             showItems(account, 200);

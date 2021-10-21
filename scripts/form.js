@@ -5,7 +5,7 @@ function forms() {
     const form = document.querySelectorAll('form'),
         inputs = document.querySelectorAll('._req');
     const message = {
-        loading: 'Загрузка...',//  <img src="./images/Spinner.gif"> 
+        loading: 'Загрузка...', //  <img src="./images/Spinner.gif"> 
         success: 'Спасибо, скоро с Вами свяжемся',
         failure: 'Что-то пошло не так'
     }
@@ -47,7 +47,7 @@ function forms() {
         let value = input.value;
         value = value.replace(/[^0-9]/g, '');
         if (value.length === 11) {
-            console.log('!');
+
             return true;
         }
     }
@@ -124,7 +124,7 @@ function forms() {
         item.addEventListener('submit', (e) => {
             e.preventDefault();
             let inputsForm = item.querySelectorAll('input');
-             if (!Validate(inputsForm)) {
+            if (!Validate(inputsForm)) {
                 return;
             }
             //create field time to formData
@@ -145,12 +145,12 @@ function forms() {
 
             let bodyMessage = document.createElement('div');
             bodyMessage.classList.add('afterSubmitMsg');
-            
+
             let spinner = document.createElement('div');
             spinner.innerHTML = `<img src="./images/Spinner.gif">`;
 
             item.appendChild(statusMessage);
-           
+
             const formData = new FormData(item);
             if (item.querySelector('._smalHeader')) {
                 let tarifName = item.querySelector('._smalHeader');
@@ -176,10 +176,10 @@ function forms() {
                 formData.append('Скидка', 'без скидки');
             }
 
-           statusMessage.textContent = message.loading;
-         //  statusMessage.innerHTML = `<img src="./images/Spinner.gif">`;
-statusMessage.append(spinner);
-           
+            statusMessage.textContent = message.loading;
+            //  statusMessage.innerHTML = `<img src="./images/Spinner.gif">`;
+            statusMessage.append(spinner);
+
             //  !!!==============================./server.php
             postData('./telegram.php', formData) // c ./server.php  проверено // //   - проверено   ./sendmail.php
                 .then(res => {

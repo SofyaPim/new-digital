@@ -12,7 +12,7 @@ function setRedPrices() {
         if (!card.previousElementSibling) {
             card.insertAdjacentHTML('beforebegin', `<h2 class="lowPrice"> ${discountPrice}$</h2>`);
         }
-     
+
         card.style.opacity = .4;
         card.classList.add('lineTrough');
 

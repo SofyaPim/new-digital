@@ -7,13 +7,11 @@ function lazyLoadImages(root) {
                     let dataItems = entry.target.querySelectorAll('[data-img]');
                     dataItems.forEach(el => {
                         const src = el.dataset.img;
-                        // console.log(src);
                         if (!el.hasAttribute("src")) {
                             el.setAttribute("src", src);
                             el.removeAttribute("data-img");
                         }
                     })
-                    // console.log(dataItems);
                 }
             }
         })
