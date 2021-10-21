@@ -1147,6 +1147,10 @@ p {
 
 .wrapper .hints-numbers__wrap .column .red {
   color: #f54906;
+  font-family: "Lato", sans-serif;
+}
+.wrapper .hints-numbers__wrap .column .red .currency{
+  font-size: calc(1.5rem + .6vw);
 }
 
 

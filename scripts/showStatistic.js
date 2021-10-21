@@ -19,7 +19,7 @@ function showStatistic() {
 
     function lessNum(num, elem, speed) {
         let l = document.querySelector(elem);
-        let n = 99;
+        let n = 80;
         let step = num / (time / speed);
         let interval = setInterval(() => {
             n = n - step;
