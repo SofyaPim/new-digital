@@ -1567,6 +1567,7 @@ p {
 .wrapper .mobile-prices .mobile-prices-wrapper .mobile-prices-card .card .price {
   width: 100%;
   position: relative;
+  margin-top: 2rem;
 }
 
 .wrapper .mobile-prices .mobile-prices-wrapper .mobile-prices-card .card .price .lowPrice {
