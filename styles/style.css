@@ -1352,7 +1352,7 @@ p {
 .wrapper .prices .card-wrapper .wrap .card .u-list {
   z-index: 70;
   width: 100%;
-  margin-bottom: 2rem;
+  margin-bottom: 6rem;
 }
 
 .wrapper .prices .card-wrapper .wrap .card .u-list .list-item {
@@ -1660,6 +1660,7 @@ p {
   font-weight: 500;
   font-size: calc(1rem + 1vw);
   text-align: center;
+  line-height: 1;
 }
 
 .wrapper .tech-support__items .support-items__card p {
