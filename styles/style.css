@@ -367,7 +367,7 @@ p {
 
 .wrapper {
   min-width: 100vw;
-  max-width: 100vw;
+  max-width: 1920px;
   overflow-x: hidden;
   padding-left: 100px;
   padding-top: 0;
@@ -484,17 +484,17 @@ p {
   transition-timing-function: ease-in, ease-in;
 }
 
-.wrapper .overlay .popup .popup-title {
+/* .wrapper .overlay .popup .popup-title {
   margin-top: 2rem;
-}
+} */
 
 .wrapper .overlay .popup h3 {
   margin-bottom: 1rem;
 }
 
 .wrapper .overlay .popup h4 {
-  margin-top: 1rem;
-  margin-bottom: 1rem;
+  /* margin-top: 1rem;
+  margin-bottom: 1rem; */
   line-height: 1;
   font-size: 1.5rem;
   font-weight: 700;
@@ -1128,7 +1128,7 @@ p {
   justify-content: space-between;
   padding-top: 2rem;
   margin: auto;
-  width: 100%;
+  max-width: 1920px;
 }
 
 .wrapper .hints-numbers__wrap .column {
@@ -1168,6 +1168,7 @@ p {
 }
 
 .wrapper .work-with-us .stage-wrapper {
+  max-width: 1440px;
   width: 80%;
   margin: auto;
   overflow: hidden;
@@ -1738,6 +1739,9 @@ p {
   grid-row: 2/3;
   overflow: hidden;
   position: absolute;
+
+  max-width: 1000px;
+  margin-top: 2rem;
   width: 100%;
 }
 
