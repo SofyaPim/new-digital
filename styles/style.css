@@ -2909,7 +2909,9 @@ p {
 }
 
 @media all and (max-width: 640px) {
-
+  .collapse {
+    bottom: -135px;
+  }
   .wrapper .overlay .popup {
     width: 90%;
   }
