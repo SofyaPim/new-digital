@@ -19,7 +19,7 @@ function showStatistic() {
 
     function lessNum(num, elem, speed) {
         let l = document.querySelector(elem);
-        let n = 100;
+        let n = 99;
         let step = num / (time / speed);
         let interval = setInterval(() => {
             n = n - step;
@@ -40,13 +40,13 @@ function showStatistic() {
             if (entry.isIntersecting) {
                
                 if (entry.target.querySelector('[data-static]')) {
-
-                    runNum(276, '#clients', 70);
-                    runNum(68, '#traffic', 12);
-                    runNum(20, '#conversion', 4);
-                    runNum = function () {}
-                    lessNum(42, '#minPrice', 8);
+ lessNum(42, '#minPrice', 11);
                     lessNum = function () {}
+                    runNum(276, '#clients', 70);
+                    runNum(68, '#traffic', 17);
+                    runNum(20, '#conversion', 5);
+                    runNum = function () {}
+                   
 
                 }
             }
