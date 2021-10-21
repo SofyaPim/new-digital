@@ -2941,7 +2941,9 @@ p {
     top: -4rem;
     border: none;
     color: #ffffff;
-    background-color: #047385;
+    background: rgb(45,167,186);
+    background: linear-gradient(45deg, rgba(45,167,186,1) 35%, rgba(31,149,168,1) 100%);
+    
     border-radius: 0.5rem;
   }
 
