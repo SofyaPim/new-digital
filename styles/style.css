@@ -220,7 +220,7 @@ p {
   top: -2rem;
   border: none;
   color: #ffffff;
-  background-color: #6597f7;
+  background: linear-gradient(270deg, #047385 -16.43%, rgba(122, 216, 231, 0) 46.28%), #50D3E8;
   border-radius: 0.5rem;
 }
 
