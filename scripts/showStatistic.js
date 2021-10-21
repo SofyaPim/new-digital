@@ -40,8 +40,8 @@ function showStatistic() {
             if (entry.isIntersecting) {
 
                 if (entry.target.querySelector('[data-static]')) {
-                    lessNum(42, '#minPrice', 11);
-                    lessNum = function () {}
+                    // lessNum(42, '#minPrice', 11);
+                    // lessNum = function () {}
                     runNum(276, '#clients', 70);
                     runNum(68, '#traffic', 17);
                     runNum(20, '#conversion', 5);
