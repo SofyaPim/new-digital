@@ -82,12 +82,12 @@ function modal(triggerSelector, modalSelector, closeSelector) {
                 oldPrice = oldPrice.match(pattern).join([]);
                 let newPrice = oldPrice - (oldPrice * 5) / 100;
                 if (triggerParent.querySelector('.price-title') && +localStorage.getItem('day') - Date.now() < 0 && localStorage.getItem('day') !== null) {
-                    priceTitle.innerHTML = ` <p class="_discount-price"> Цена без скидки ${oldPrice}$ </p> `;
+                    priceTitle.innerHTML = ` <p class="_discount-price"> Цена без скидки ${oldPrice} &#8381; </p> `;
                 } else if (triggerParent.querySelector('.price-title') && +localStorage.getItem('day') - Date.now() > 0 && localStorage.getItem('day') !== null) {
-                    priceTitle.innerHTML = ` <p class="_discount-price"> Цена со скидкой составляет ${newPrice}$ </p> `;
+                    priceTitle.innerHTML = ` <p class="_discount-price"> Цена со скидкой составляет ${newPrice} &#8381; </p> `;
 
                 } else if (triggerParent.querySelector('.price-title') && localStorage.getItem('day') === null) {
-                    priceTitle.innerHTML = ` <p class="_price"> Цена без скидки ${oldPrice}$ </p> <p class="_discount-price"> Цена со скидкой составляет ${newPrice}$ </p> `
+                    priceTitle.innerHTML = ` <p class="_price"> Цена без скидки ${oldPrice} &#8381; </p> <p class="_discount-price"> Цена со скидкой составляет ${newPrice} &#8381; </p> `
                 }
 
                 smallHeader.after(priceTitle);
